@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Maze</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<style>
+		.heading{
+			font-weight: bold;
+			font-size: 3rem;
+			font-family: 'Luckiest Guy', cursive;
+			text-align: center;
+			padding-top: 15px;
+			letter-spacing: 10px;
+		}
+		.canvas {
+			display: flex;
+			justify-content: center;
+		}
+
+		.buttons {
+			display: flex;
+			justify-content: space-around;
+			margin-top: 15px;
+		}
+		.buttons > button {
+			padding: 7px;
+			transition: all .3s;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 class="heading"> P  U  Z  Z  L  E  ! </h1>
+
+	<div class="buttons">
+		<!-- Update the maze</button> -->
+		<button type="button" id="gen-res" class="btn btn-outline-dark">Update Maze</button>
+		<!-- Search using DFS</button> -->
+		<button type="button" id="dfs" class="btn btn-outline-dark">Search using DFS</button>
+		<!--DFS result</button> -->
+		<button type="button" id="dfs-res" class="btn btn-outline-dark">DFS result</button>
+	</div>
+
+	<div class="canvas">
+		<canvas id="canvas"></canvas>
+	</div>
+
+	<script src="./maze.js"></script>
+	<script src="./maze-final.js"></script>
+</body>
+</html>
